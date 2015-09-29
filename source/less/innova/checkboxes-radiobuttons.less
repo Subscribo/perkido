@@ -1,0 +1,83 @@
+/* ==========================================================================
+4. Checkboxes & Radiobuttons
+========================================================================== */
+
+@import 'wtf-forms';
+
+.checkbox, .radio {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.control {
+  padding-left: 2.7rem;
+  font-weight: normal;
+  color: @innova-slate-gray-base;
+  
+  * {
+    transition: all .2s ease; /* Add smooth transition for supported browsers */
+  }
+}
+
+.control input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+}
+
+.control-indicator {
+  top: .1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 1px solid #d2d9df;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+// Color variations
+
+.control {
+  &.-blue input:checked ~ .control-indicator,
+  &.-blue input:active ~ .control-indicator {
+    background-color: @innova-blue;
+    border: 0;
+  }
+
+  &.-purple input:checked ~ .control-indicator,
+  &.-purple input:active ~ .control-indicator {
+    background-color: @innova-purple;
+    border: 0;
+  }
+
+  &.-red input:checked ~ .control-indicator,
+  &.-red input:active ~ .control-indicator {
+    background-color: @innova-red;
+    border: 0;
+  }
+
+  &.-gray input:checked ~ .control-indicator,
+  &.-gray input:checked ~ .control-indicator {
+    background-color: @innova-gray;
+    border: 0;
+  }
+
+  &.-disabled input:disabled ~ .control-indicator {
+    background-color: #e7eff4;
+    border: 1px solid #d2d9df;
+  }
+}
+
+// Disabled states
+
+.control input:disabled ~ .control-indicator {
+  background-color: #e7eff4;
+  border: 1px solid #d2d9df;
+}
+
+.checkbox.-disabled input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA4IDgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDggOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGZpbGw9IiNiZmM2Y2MiIGQ9Ik02LjQsMUw1LjcsMS43TDIuOSw0LjVMMi4xLDMuN0wxLjQsM0wwLDQuNGwwLjcsMC43bDEuNSwxLjVsMC43LDAuN2wwLjctMC43bDMuNS0zLjVsMC43LTAuN0w2LjQsMUw2LjQsMXoiCgkvPgo8L3N2Zz4=);
+}
+
+.radio.-disabled input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA4IDgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDggOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGZpbGw9IiNiZmM2Y2MiIGQ9Ik00LDFDMi4zLDEsMSwyLjMsMSw0czEuMywzLDMsM3MzLTEuMywzLTNTNS43LDEsNCwxeiIvPgo8L3N2Zz4=);
+}

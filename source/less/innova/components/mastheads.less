@@ -1,0 +1,593 @@
+/* ==========================================================================
+4. Mastheads
+========================================================================== */
+
+// 0. Global styling
+// -------------------------
+
+.masthead {
+  overflow: hidden;
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .sub-heading {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .heading small {
+    display: block;
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 60%;
+  }
+
+  .device {
+    position: relative;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .btn {
+    margin: 0 3px;
+  }
+
+  p {
+    font-size: @innova-font-size-large;
+  }
+}
+
+// 1. Masthead 1
+// -------------------------
+
+.masthead-1 {
+  padding: 80px 50px;
+  text-align: center;
+  height: 700px;
+
+  @media (min-width: @screen-sm-min) {
+    text-align: left;
+    height: 470px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    height: 600px;
+    padding: 180px 90px;
+  }
+  
+  .call-to-action {
+    margin-bottom: 60px;
+
+    @media (min-width: @screen-md-min) {
+      margin-bottom: 150px;
+    }
+  }
+
+  .device {
+    img {
+      top: 0;
+
+      @media (max-width: @screen-sm-min) {
+        left: 5px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        top: -100px;
+      }
+    }
+
+    @media (min-width: @screen-md-min) {
+      &.-right img {
+        right: -30px;
+      }
+
+      &.-left img {
+        left: -30px;
+      }
+    }
+  }
+}
+
+// 2. Masthead 2
+// -------------------------
+
+.masthead-2 {
+  padding: 80px 50px;
+  text-align: center;
+  height: 750px;
+
+  @media (min-width: @screen-sm-min) {
+    text-align: left;
+    height: 470px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    height: 600px;
+    padding: 180px 90px;
+  }
+  
+  .call-to-action {
+    margin-bottom: 60px;
+
+    @media (min-width: @screen-md-min) {
+      margin-bottom: 150px;
+    }
+  }
+
+  .device {
+    img {
+      top: 0;
+      
+      @media (max-width: @screen-sm-min) {
+        left: 50%;
+        transform: translateX(-32%);
+      }
+
+      @media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+        max-width: 400px;
+        right: -150px;
+        top: -50px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        top: -130px;
+        right: -70px;
+      }
+    }
+  }
+}
+
+// 3. Masthead 3
+// -------------------------
+
+.masthead-3 {
+  padding: 80px 50px;
+  text-align: center;
+  height: 720px;
+
+  @media (min-width: @screen-sm-min) {
+    text-align: left;
+    height: 470px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    height: 600px;
+    padding: 150px 90px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding: 190px 90px;
+  }
+
+  .call-to-action {
+    margin-bottom: 60px;
+
+    @media (min-width: @screen-md-min) {
+      margin-bottom: 150px;
+    }
+  }
+
+  .device {
+    img {
+      top: 0;
+      
+      @media (max-width: @screen-sm-min) {
+        left: 50%;
+        transform: translateX(-49%);
+      }
+
+      @media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+        max-width: 400px;
+        right: -80px;
+        top: -20px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        top: -70px;
+        right: -10px;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        top: -130px;
+      }
+    }
+  }
+
+  .heading {
+
+    @media (min-width: @screen-md-min) {
+      padding-right: 60px;
+    }
+  }
+}
+
+// 4. Masthead 4
+// -------------------------
+
+.masthead-4 {
+  padding: 110px 60px;
+  text-align: center;
+
+  @media (min-width: @screen-md-min) {
+    text-align: left;
+  }
+
+  .video-image img {
+    margin: 0 auto 40px auto;
+
+    @media (min-width: @screen-md-min) {
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+// 6. Masthead 6
+// -------------------------
+
+.masthead-6 {
+  padding-top: 110px;
+  min-height: 700px;
+
+  @media (min-width: @screen-sm-min) {
+    min-height: 750px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    min-height: 850px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    min-height: 950px;
+  }
+
+  .device {
+    img {
+      top: 70px;
+      left: 50%;
+      transform: translateX(-55%);
+    }
+  }
+
+  .heading {
+    font-size: 44px;
+    margin: 0 0 25px 0;
+  }
+
+  .heading small {
+    padding-top: 10px;
+  }
+}
+
+// 7. Masthead 7
+// -------------------------
+
+.masthead-7 {
+  .masthead-3;
+  height: 780px;
+
+  @media (min-width: @screen-sm-min) {
+    text-align: left;
+    height: 540px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    height: 600px;
+    padding: 130px 90px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding: 170px 90px;
+  }
+
+  .app-link .btn {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+
+    @media (min-width: @screen-sm-min) {
+      margin: 15px 0;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      margin: 0 5px 0 0;
+      display: inline;
+      width: auto;
+    }
+  }
+}
+
+// 8. Masthead 8
+// -------------------------
+
+.masthead-8 {
+  padding: 80px 50px;
+  text-align: center;
+  height: 800px;
+
+  @media (min-width: @screen-md-min) {
+    text-align: left;
+    height: auto;
+    padding: 200px 90px 180px 90px;
+  }
+
+  .call-to-action {
+    margin-bottom: 40px;
+
+    @media (min-width: @screen-md-min) {
+      margin-bottom: 0;
+    }
+  }
+
+  .device {
+    img {
+      top: 0;
+      
+      @media (max-width: @screen-md-min) {
+        left: 50%;
+        transform: translateX(-49%);
+      }
+
+      @media (min-width: @screen-md-min) {
+        top: -160px;
+        right: -10px;
+        max-width: 400px;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        top: -160px;
+        right: 50px;
+        max-width: 400px;
+      }
+    }
+  }
+  
+  .app-link .btn {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: 470px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .heading {
+    @media (min-width: @screen-md-min) {
+      padding-right: 60px;
+    }
+  }
+}
+
+// 9. Masthead 9
+// -------------------------
+
+.masthead-9 {
+  padding-top: 100px;
+  min-height: 670px;
+  background-color: #fff !important;
+  background-image: none;
+  position: relative;
+
+  @media (min-width: @screen-sm-min) {
+    min-height: 760px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    min-height: 940px;
+  }
+
+  &:after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    z-index: 1;
+    background-color: @innova-blue;
+  }
+
+  .device {
+    z-index: 2;
+
+    img {
+      top: 30px;
+      .center-horizontal;
+
+      @media (max-width: @screen-sm-min) {
+        top: 60px;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        top: 60px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        top: 80px;
+        right: -70px;
+        max-width: 900px;
+      }
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+
+    @media (min-width: 470px) {
+      margin: 0 5px 0 0;
+      display: inline;
+      width: auto;
+    }
+  }
+
+  .ghost-btn:hover {
+    color: @innova-blue !important;
+  }
+
+  .heading {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    margin: 0 0 25px 0;
+  }
+
+  .heading small {
+    padding-top: 10px;
+  }
+}
+
+// 10. Masthead 10
+// -------------------------
+
+.masthead-10 {
+  padding-top: 100px;
+  min-height: 670px;
+  background-color: #fff !important;
+  background-image: none;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: @screen-sm-min) {
+    min-height: 760px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    min-height: 720px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    background-color: @innova-blue;
+  }
+
+  .call-to-action {
+    @media (min-width: @screen-md-min) {
+      position: absolute;
+      top: 200px;
+      left: 100px;
+      z-index: 1001;
+    }
+  }
+
+  .device {
+    z-index: 2;
+
+    img {
+      top: 30px;
+
+      @media (max-width: @screen-sm-min) {
+        .center-horizontal;
+      }
+      
+      @media (min-width: @screen-md-min) {
+        top: 20px;
+        right: -150px;
+        max-width: 900px;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        right: -40px;
+      }
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+
+    @media (min-width: 470px) {
+      margin: 0 5px 0 0;
+      display: inline;
+      width: auto;
+    }
+  }
+
+  .ghost-btn:hover {
+    color: @innova-blue !important;
+  }
+
+  .heading {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    margin: 0 0 25px 0;
+  }
+
+  .heading small {
+    padding-top: 10px;
+  }
+}
+
+// 11. Masthead 11
+// -------------------------
+
+.masthead-11 {
+  padding: 0;
+  height: 100%;
+
+  .heading {
+    font-size: 40px;
+
+    small {
+      font-size: 70%;
+    }
+  }
+
+  .gallery {
+    height: 100% !important;
+  }
+
+  .gallery-cell {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+
+    &:first-child {
+      background-image: url(../img/portfolio-items/bg-3.jpg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/portfolio-items/bg-4.jpg);
+    }
+  }
+
+  .masthead-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: 30px;
+  }
+
+  .flickity-prev-next-button.next {
+    right: 30px;
+  }
+
+  .flickity-page-dots {
+    bottom: 50px;
+  }
+}

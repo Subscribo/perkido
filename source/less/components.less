@@ -1,0 +1,396 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Innova
+  Theme URI: http://www.tamashi-themes.com/themes/innova/1.0.4
+  Description: A well structured theme with a focus on full screen media
+  Author: Tamashi Themes
+  Author URI: http://www.tamashi-themes.com
+  Version: 1.0.4
+
+-----------------------------------------------------------------------------------
+
+  Stylesheet Contents
+
+  0. Global styling
+  1. Headers/Navigation
+  2. Features
+  3. Sliders
+  4. Mastheads
+  5. Call To Actions
+  6. Content blocks
+  7. Content headers
+  8. Forms
+  9. Portfolio
+  10. Pricing
+  11. Team
+  12. Testimonials
+  13. Contact
+  14. Footers
+  15. Customized page specific CSS
+
+-----------------------------------------------------------------------------------*/
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "innova/variables";
+@import "innova/mixins";
+@import "innova/animations";
+
+// Theme components
+@import "innova/components/global";
+@import "innova/components/headers";
+@import "innova/components/features";
+@import "innova/components/sliders";
+@import "innova/components/mastheads";
+@import "innova/components/ctas";
+@import "innova/components/content";
+@import "innova/components/content-headers";
+@import "innova/components/forms";
+@import "innova/components/portfolios";
+@import "innova/components/pricing";
+@import "innova/components/team";
+@import "innova/components/testimonials";
+@import "innova/components/contact";
+@import "innova/components/footers";
+
+//Styling for the docs
+@import "innova/ui-kit";
+
+/* ==========================================================================
+15. Customized page specific CSS
+========================================================================== */
+
+.components {
+  background-color: #f6f8fa;
+}
+
+.ui-kit section:nth-child(odd){
+  background-color: #fff;
+}
+
+body section:nth-child(odd) {
+  background-color: #f6f8fa;
+
+  &.inverse {
+    border-width: 0;
+  }
+}
+
+.-bg-white {
+  background-color: #fff !important;
+}
+
+.-bg-grey {
+  background-color: #f6f8fa !important;
+}
+
+a, button {
+  transition: all .2s ease-in-out;
+}
+
+.navbar-brand {
+  padding: 26px 15px;
+}
+
+.navbar-brand svg,
+.innova-navbar-brand svg {
+  width: 100%;
+}
+
+.georgia {
+  font-family: "Georgia";
+  font-weight: lighter;
+}
+
+.map {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.statusMessage {
+  position: absolute;
+  left: 165px;
+  top: 7px;
+  display: none;
+  text-align: center;
+}
+
+// 3. Homepage default
+// -------------------------
+
+.homepage-default {
+  // .heading {
+  //   font-size: 30px;
+    
+  //   small {
+  //     font-size: 75%;
+  //   }
+  // }
+
+  .-inverse {
+    .outline-icon {}
+  }
+
+  .masthead-9 {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    min-height: 740px;
+    background-color: #fff !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+0,ffffff+100&amp;1+0,0+100 */
+    background: -moz-linear-gradient(top,  rgba(110,110,110,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(110,110,110,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(110,110,110,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(110,110,110,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(110,110,110,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(110,110,110,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    position: relative;
+
+    @media (min-width: @screen-sm-min) {
+      min-height: 810px;
+    }
+
+    @media (min-width: @screen-md-min) {
+      min-height: 915px;
+      padding-top: 155px;
+    }
+
+    .heading {
+      font-size: 32px;
+      
+      small {
+        font-size: 75%;
+      }
+    }
+
+    &:after {
+      content: ''; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 72%;
+      z-index: 1;
+      background-color: @innova-blue;
+      background-image: url(../img/geometry2.jpg);
+      border-bottom: 1px solid #fff;
+    }
+
+    .device {
+      // .gallery {
+      //   margin-top: 60px;
+      //   background-image: url(../../img/macbook-front.png);
+      //   background-size: 70%;
+      //   background-repeat: no-repeat;
+      //   background-position: center top;
+      //   height: 50%;
+      // }
+
+      // .gallery-cell {
+      //   height: 500px;
+      //   width: 50%;
+      //   background-color: #000;
+      // }
+
+      z-index: 2;
+      img {
+        top: 30px;
+        .center-horizontal;
+
+        @media (max-width: @screen-sm-min) {
+          top: 30px;
+        }
+
+        @media (min-width: @screen-sm-min) {
+          top: 60px;
+        }
+
+        @media (min-width: @screen-md-min) {
+          top: 60px;
+          right: -70px;
+          max-width: 830px;
+        }
+      }
+    }
+  }
+
+  .flat-btn.-white,
+  .primary-btn.-white {
+    background-color: #fff;
+    color: @innova-blue !important;
+    border-color: #fff;
+  }
+}
+
+// 4. Homepage App
+// -------------------------
+
+.homepage-app {
+  a {
+    color: @brand-warning;
+
+    &:hover,
+    &:focus {
+      color: darken(@brand-warning, 10%);
+    }
+  }
+  
+  .primary-navbar .navbar-toggle .icon-bar {
+    background-color: @brand-warning;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @primary-navbar-link-color;
+
+      @media (min-width: @screen-md-min) {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+      }
+
+      &:hover,
+      &:focus {
+        color: @brand-warning;
+        background-color: @primary-navbar-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @brand-warning;
+        border-bottom-color: @brand-warning;
+      }
+    }
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        border-color: transparent;
+      }
+    }
+  }
+
+  .navbar-brand svg {
+    fill: darken(@brand-warning, 5%);
+  }
+
+  .-inverse {
+    background-image: url(../img/stardust.png);
+    background-color: @innova-inverse;
+  }
+
+  .masthead-8 {
+    padding: 140px 50px;
+
+    @media (min-width: @screen-md-min) {
+      padding: 280px 90px 190px 90px;
+    }
+
+    .device {
+      img {
+        top: 0;
+        
+        @media (max-width: @screen-sm-min) {
+          left: 50%;
+          transform: translateX(-32%);
+        }
+
+        @media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+          max-width: 400px;
+          right: -150px;
+          top: -10px;
+        }
+
+        @media (min-width: @screen-md-min) {
+          top: -100px;
+          right: -60px;
+          max-width: 480px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+          top: -130px;
+          right: -60px;
+          max-width: 550px;
+        }
+      }
+    }
+  }
+
+  .app-link .store-link:hover {
+    color: @brand-warning;
+    opacity: 1;
+  }
+
+  .outline-icon {
+    color: @brand-warning;
+  }
+
+  .flickity-page-dots .dot,
+  .flickity-page-dots .dot.is-selected {
+    color: @innova-slate-gray-base;
+    background: @brand-warning;
+  }
+
+  .footer {
+    a {
+      color: #fff;
+
+      &:hover {
+        color: @brand-warning;
+      }
+    }
+  }
+}
+
+.homepage-portfolio {
+  .portfolio-4 {
+    .project-info {
+      padding: 40px 30px;
+
+      @media (min-width: @screen-md-min) {
+        padding: 35px 50px 0 50px;
+      }
+      
+      @media (min-width: @screen-lg-min) {
+        padding: 90px 50px 0 50px;
+      }
+    }
+  }
+}
+
+.homepage-onepage {
+  .masthead-11 {
+    .heading {
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      small {
+        text-transform: none;
+        font-size: 70%;
+      }
+    }
+
+    .gallery-cell {
+      &:first-child {
+        background-image: url(../img/portfolio-items/bg-6.jpg);
+      }
+    }
+  }
+}
+
+.portfolio-content {
+  background-color: transparent !important;
+}
+
+.portfolio-content-inner {
+  padding: 40px 10px 0 10px;
+
+  @media (min-width: @screen-md-min) {
+    padding: 40px 20px 0 20px;
+  }
+}

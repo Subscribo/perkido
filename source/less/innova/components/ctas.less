@@ -1,0 +1,167 @@
+/* ==========================================================================
+5. Call To Actions
+========================================================================== */
+
+// 0. Global styling
+// -------------------------
+
+.cta {
+  padding: 40px 60px;
+
+  .heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .sub-heading {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: @innova-font-size-large;
+  }
+}
+
+.-single {
+  margin: 20px auto 0 auto !important;
+  display: block !important;
+}
+
+// 1. CTA 1
+// -------------------------
+
+.cta-1 {
+  text-align: center;
+
+  @media (min-width: @screen-md-min) {
+    text-align: left;
+  }
+
+  .heading {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    width: 100%;
+
+    small {
+      font-size: 90%;
+    }
+
+    @media (min-width: @screen-md-min) {
+      width: auto;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+
+    @media (min-width: @screen-md-min) {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+}
+
+// 2. CTA 2
+// -------------------------
+
+.cta-2 {
+  .cta-1;
+
+  .btn {
+    margin-top: 0;
+    float: none;
+  }
+
+  .app-link {
+    margin-top: 20px;
+
+    @media (min-width: @screen-md-min) {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+}
+
+// 3. CTA 3
+// -------------------------
+
+.cta-3 {
+  .cta-1;
+  padding: 70px 60px;
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .btn {
+    margin-top: 0;
+    float: none;
+  }
+
+  .app-link {
+    margin-top: 30px;
+
+    @media (min-width: @screen-md-min) {
+      float: none;
+      margin-top: 30px;
+    }
+  }
+}
+
+// 4. CTA 4
+// -------------------------
+
+.cta-4 {
+  padding: 0 0 0;
+  overflow: hidden;
+
+  .shout {
+    text-align: center;
+    padding: 35px 30px;
+    font-size: 22px;
+
+    @media (min-width: @screen-md-min) {
+      padding: 40px 20px;
+      font-size: 18px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      padding: 38px 30px;
+      font-size: 22px;
+    }
+  }
+
+  .call-to-action {
+    background-color: fade(@innova-slate-gray-base, 10%);
+    border-top: 1px solid fade(@innova-slate-gray-base, 20%);
+    border-bottom: 1px solid fade(@innova-slate-gray-base, 20%);
+    text-align: center;
+
+    .inner {
+      padding: 31px 10px;
+    }
+
+    @media (min-width: @screen-md-min) {
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 1px solid fade(@innova-slate-gray-base, 20%);
+      border-right: 1px solid fade(@innova-slate-gray-base, 20%);
+    }
+
+    .btn {
+      margin-right: 15px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+
+      @media (min-width: @screen-sm-min) {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
