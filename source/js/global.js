@@ -6,21 +6,21 @@
 var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch-small'));
 
 elems.forEach(function(html) {
-  var switchery = new Switchery(html, { size: 'small', color: '#3897ff' });
+  var switchery = new Switchery(html, { size: 'small', color: '#4E3C91' });
 });
 
 // Normal
 var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
 elems.forEach(function(html) {
-  var switchery = new Switchery(html, { color: '#3897ff' });
+  var switchery = new Switchery(html, { color: '#4E3C91' });
 });
 
 // Large
 var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch-large'));
 
 elems.forEach(function(html) {
-  var switchery = new Switchery(html, { size: 'large', color: '#3897ff' });
+  var switchery = new Switchery(html, { size: 'large', color: '#4E3C91' });
 });
 
 //
@@ -52,7 +52,7 @@ $('.innova-navbar-search-trigger').on('click', function(event){
 
 function toggleSearch(type) {
 	if(type=="close") {
-		//close serach 
+		//close serach
 		$('.innova-navbar-search').removeClass('is-visible');
 		$('.innova-navbar-search-trigger').removeClass('search-is-visible');
 		$('.innova-navbar-overlay').removeClass('search-is-visible');
