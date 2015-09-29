@@ -1,0 +1,187 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Neutral and brand colors used in Innova
+@perkido-slate-gray-lighter: lighten(#9abfca, 10%);
+@perkido-slate-gray-light: #9abfca;
+@perkido-slate-gray-base: #6d878f;
+@perkido-slate-gray: #364347;
+@perkido-slate-gray-dark: darken(@perkido-slate-gray, 10%);
+@perkido-slate-gray-darker: darken(@perkido-slate-gray, 20%);
+
+//** Inverted colors
+@perkido-inverse: darken(@perkido-gray, 12%);
+@perkido-inverse-color: rgba(255, 255, 255, 0.6);
+
+//** Shades of blue
+@perkido-blue: #3897ff;
+@perkido-blue-dark: darken(@perkido-blue, 10%);
+@perkido-blue-darker: darken(@perkido-blue, 30%);
+
+//** Shades of purple
+@perkido-purple: #4E3C91;
+@perkido-purple-dark: darken(@perkido-purple, 10%);
+@perkido-purple-darker: darken(@perkido-purple, 30%);
+
+//** Supportive colors
+@perkido-purple: #673ab7;
+@perkido-red: #C6435A;
+@perkido-gray: #445862;
+@perkido-white: #eef4f8;
+
+//** Generic colors
+@brand-success:         #61B53D;
+@brand-info:            #61B53D;
+@brand-warning:         #D3B947;
+@brand-danger:          #C6435A;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @perkido-slate-gray-base;
+
+//** Global textual link color.
+@link-color:            @perkido-blue;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: none;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+//** Innova font size
+@perkido-font-size:         15px;
+@perkido-font-size-large:   16px;
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    600;
+@headings-line-height:    1.2;
+@headings-color:          inherit;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "../../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
+//== Forms
+//
+//##
+
+//** Modified input color
+@input-color: @perkido-slate-gray-base;
+
+//** `<input>` border color
+@input-border: lighten(@perkido-slate-gray-base, 30%);
+
+//** `<input disabled>` background color
+@input-bg-disabled: lighten(@perkido-slate-gray-base, 45%);
+
+//** Placeholder text color
+@input-color-placeholder: lighten(@perkido-slate-gray-base, 40%);
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             #4bdf91;
+@state-success-bg:               #e1fff1;
+@state-success-border:           @state-success-text;
+
+@state-info-text:                #5bc0de;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              @state-info-text;
+
+@state-warning-text:             #f6c329;
+@state-warning-bg:               #fffbe3;
+@state-warning-border:           @state-warning-text;
+
+@state-danger-text:              #ff6d6d;
+@state-danger-bg:                #ffe2e2;
+@state-danger-border:            @state-danger-text;
+
+//== Bootstrap Default Navbar
+//
+//##
+
+// Basics of a navbar
+@navbar-height:                    80px;
+
+//== Primary Navbar
+//
+//##
+
+// Navbar toggle
+@primary-navbar-main-color:                @perkido-purple;
+@primary-navbar-toggle-hover-bg:           #ddd;
+@primary-navbar-toggle-icon-bar-bg:        @primary-navbar-main-color;
+@primary-navbar-toggle-border-color:       #ddd;
+
+// Navbar links
+@primary-navbar-link-color:                @perkido-slate-gray-base;
+@primary-navbar-link-hover-color:          @primary-navbar-main-color;
+@primary-navbar-link-hover-bg:             transparent;
+@primary-navbar-link-active-color:         #fff;
+@primary-navbar-link-active-bg:            @primary-navbar-main-color;
+@primary-navbar-link-disabled-color:       #ccc;
+@primary-navbar-link-disabled-bg:          transparent;
+
+//== Innova Navbars
+//
+//##
+
+// Basics of a navbar
+@perkido-navbar-height:             80px;
+@perkido-navbar-height-lg:          150px;
+
+// Hamburger variables
+@color:                            @perkido-purple;
+@height-icon:                      12px;
+@width-line:                       27px;
+@height-line:                      2px;
+@transition-time:                  0.4s;
+@rotation:                         45deg;
+@translateY:                       (@height-icon / 2);
+@translateX:                       0;

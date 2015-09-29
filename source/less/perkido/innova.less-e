@@ -1,0 +1,40 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "animations";
+
+// Theme CSS
+@import "buttons";
+@import "dropdowns";
+@import "typography";
+@import "checkboxes-radiobuttons";
+@import "switches";
+@import "input";
+@import "pagination";
+@import "navs";
+@import "breadcrumbs";
+@import "badges";
+@import "labels";
+@import "alerts";
+@import "panels";
+@import "progress";
+
+// Theme components
+@import "components/global";
+@import "components/headers";
+@import "components/features";
+@import "components/sliders";
+@import "components/mastheads";
+@import "components/ctas";
+@import "components/content";
+@import "components/content-headers";
+@import "components/forms";
+@import "components/portfolios";
+@import "components/pricing";
+@import "components/team";
+@import "components/testimonials";
+@import "components/contact";
+@import "components/footers";
+
+//Styling for the docs
+@import "ui-kit";

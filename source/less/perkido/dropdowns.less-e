@@ -1,0 +1,188 @@
+/* ==========================================================================
+2. Dropdowns
+========================================================================== */
+
+// Give dropdown a nice animation on enter & reveal
+.dropdown-menu {
+
+  @media (min-width: @screen-md-min) {
+    display: block;
+    opacity: 0;
+    transform: scale(.8) translateY(-30%);
+    transition: .4s cubic-bezier(.3, 0, 0, 1.3);
+    pointer-events: none;
+    min-width: 210px;
+  }
+}
+
+.open .dropdown-menu {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.dropdown-menu > li > a {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.dropdown-menu > .active a {
+  background-color: @perkido-purple;
+}
+
+// Primary dropdowns
+// -------------------------
+
+.dropdown-primary(@color, @background) {
+  a {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-top: 1px solid darken(@background, 15%);
+      border-bottom: 1px solid darken(@background, 15%);
+      background-image: -moz-linear-gradient( 90deg, spin(lighten(@background, 7%), 2) 2%, darken(@background, 8%) 9%, spin(lighten(@background, 8%), 2) 100%);
+      background-image: -webkit-linear-gradient( 90deg, spin(lighten(@background, 7%), 2) 2%, darken(@background, 8%) 9%, spin(lighten(@background, 8%), 2) 100%);
+      background-image: -ms-linear-gradient( 90deg, spin(lighten(@background, 7%), 2) 2%, darken(@background, 8%) 9%, spin(lighten(@background, 8%), 2) 100%);
+      color: @color;
+      // padding-left: 25px;
+      // text-shadow: 0 0 2px darken(@background, 30%);
+    }
+  }
+
+  .active a {
+    background-color: @background;
+  }
+}
+
+// Styles
+// -------------------------
+
+.dropdown-primary {
+  // Color variations
+  &.-blue {
+    .dropdown-primary(white, @perkido-blue);
+  }
+  &.-purple {
+    .dropdown-primary(white, @perkido-purple);
+  }
+  &.-red {
+    .dropdown-primary(white, @perkido-red);
+  }
+  &.-gray {
+    .dropdown-primary(white, @perkido-gray);
+  }
+  &.-success {
+    .dropdown-primary(white, @brand-success);
+  }
+  &.-info {
+    .dropdown-primary(white, @brand-info);
+  }
+  &.-warning {
+    .dropdown-primary(white, @brand-warning);
+  }
+  &.-danger {
+    .dropdown-primary(white, @brand-danger);
+  }
+}
+
+// Flat dropdowns
+// -------------------------
+
+.dropdown-flat(@color, @background) {
+  a {
+    &:hover {
+      background-color: @background;
+      color: @color;
+      // padding-left: 25px;
+    }
+  }
+
+  .active a {
+    background-color: @background;
+  }
+}
+
+// Styles
+// -------------------------
+
+.dropdown-flat {
+  // Color variations
+  &.-blue {
+    .dropdown-flat(white, @perkido-blue);
+  }
+  &.-purple {
+    .dropdown-flat(white, @perkido-purple);
+  }
+  &.-red {
+    .dropdown-flat(white, @perkido-red);
+  }
+  &.-gray {
+    .dropdown-flat(white, @perkido-gray);
+  }
+  &.-success {
+    .dropdown-flat(white, @brand-success);
+  }
+  &.-info {
+    .dropdown-flat(white, @brand-info);
+  }
+  &.-warning {
+    .dropdown-flat(white, @brand-warning);
+  }
+  &.-danger {
+    .dropdown-flat(white, @brand-danger);
+  }
+}
+
+// Ghost dropdowns
+// -------------------------
+
+.dropdown-ghost(@color, @background) {
+  a {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: @background;
+      border-top: 2px solid @background;
+      border-bottom: 2px solid @background;
+      background-color: transparent;
+      // padding-left: 25px;
+    }
+  }
+
+  .active a {
+    background-color: @background;
+  }
+}
+
+// Styles
+// -------------------------
+
+.dropdown-ghost {
+  // Color variations
+  &.-blue {
+    .dropdown-ghost(white, @perkido-blue);
+  }
+  &.-purple {
+    .dropdown-ghost(white, @perkido-purple);
+  }
+  &.-red {
+    .dropdown-ghost(white, @perkido-red);
+  }
+  &.-gray {
+    .dropdown-ghost(white, @perkido-gray);
+  }
+  &.-success {
+    .dropdown-ghost(white, @brand-success);
+  }
+  &.-info {
+    .dropdown-ghost(white, @brand-info);
+  }
+  &.-warning {
+    .dropdown-ghost(white, @brand-warning);
+  }
+  &.-danger {
+    .dropdown-ghost(white, @brand-danger);
+  }
+}

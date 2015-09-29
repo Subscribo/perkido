@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
   Theme Name: Innova
-  Theme URI: http://www.tamashi-themes.com/themes/innova/1.0.4
+  Theme URI: http://www.tamashi-themes.com/themes/perkido/1.0.4
   Description: A well structured theme with a focus on full screen media
   Author: Tamashi Themes
   Author URI: http://www.tamashi-themes.com
@@ -58,7 +58,7 @@
 /* ==========================================================================
 0. Global styling
 ========================================================================== */
-.components .innova-docs section section {
+.components .perkido-docs section section {
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid rgba(158, 164, 169, 0.7);
@@ -856,7 +856,7 @@ section .sub-heading {
 .secondary-navbar.-gray.-large .navbar-addon > li > a:hover {
   color: #b5c4cc;
 }
-.innova-navbar {
+.perkido-navbar {
   background-color: #fff;
   border: 1px solid rgba(158, 164, 169, 0.7);
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.05);
@@ -865,51 +865,51 @@ section .sub-heading {
   padding: 0 20px;
   position: relative;
 }
-.innova-navbar .navbar-nav > li > a {
+.perkido-navbar .navbar-nav > li > a {
   color: #6d878f;
 }
 @media (min-width: 992px) {
-  .innova-navbar .navbar-nav > li > a {
+  .perkido-navbar .navbar-nav > li > a {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
   }
 }
-.innova-navbar .navbar-nav > li > a:hover,
-.innova-navbar .navbar-nav > li > a:focus {
+.perkido-navbar .navbar-nav > li > a:hover,
+.perkido-navbar .navbar-nav > li > a:focus {
   color: #673ab7;
   background-color: transparent;
 }
-.innova-navbar .navbar-nav > .active > a,
-.innova-navbar .navbar-nav > .active > a:hover,
-.innova-navbar .navbar-nav > .active > a:focus {
+.perkido-navbar .navbar-nav > .active > a,
+.perkido-navbar .navbar-nav > .active > a:hover,
+.perkido-navbar .navbar-nav > .active > a:focus {
   color: #673ab7;
   border-bottom-color: #673ab7;
 }
-.innova-navbar .navbar-nav > .open > a,
-.innova-navbar .navbar-nav > .open > a:hover,
-.innova-navbar .navbar-nav > .open > a:focus {
+.perkido-navbar .navbar-nav > .open > a,
+.perkido-navbar .navbar-nav > .open > a:hover,
+.perkido-navbar .navbar-nav > .open > a:focus {
   background-color: transparent;
   border-color: transparent;
 }
-.innova-navbar .glyphicon {
+.perkido-navbar .glyphicon {
   color: #673ab7;
 }
-.innova-navbar .navbar-toggle {
+.perkido-navbar .navbar-toggle {
   background-image: -moz-linear-gradient(90deg, #fcfeff 0%, #fcfeff 3%, rgba(252, 253, 254, 0.99) 7%, rgba(252, 252, 252, 0.98) 20%, rgba(252, 254, 255, 0.87843) 100%);
   background-image: -webkit-linear-gradient(90deg, #fcfeff 0%, #fcfeff 3%, rgba(252, 253, 254, 0.99) 7%, rgba(252, 252, 252, 0.98) 20%, rgba(252, 254, 255, 0.87843) 100%);
   background-image: -ms-linear-gradient(90deg, #fcfeff 0%, #fcfeff 3%, rgba(252, 253, 254, 0.99) 7%, rgba(252, 252, 252, 0.98) 20%, rgba(252, 254, 255, 0.87843) 100%);
   border: 1px solid rgba(158, 164, 169, 0.7);
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.05);
 }
-.innova-navbar .navbar-toggle:hover,
-.innova-navbar .navbar-toggle:focus {
+.perkido-navbar .navbar-toggle:hover,
+.perkido-navbar .navbar-toggle:focus {
   background-color: #dddddd;
   background-image: none;
 }
-.innova-navbar .navbar-toggle .icon-bar {
+.perkido-navbar .navbar-toggle .icon-bar {
   background-color: #673ab7;
 }
-.innova-navbar.-transparent-nav {
+.perkido-navbar.-transparent-nav {
   background-color: transparent;
   background-image: none;
   box-shadow: none;
@@ -917,84 +917,84 @@ section .sub-heading {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.innova-navbar.-transparent-nav .navbar-nav > li > a {
+.perkido-navbar.-transparent-nav .navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 700;
 }
 @media (min-width: 992px) {
-  .innova-navbar.-transparent-nav .navbar-nav > li > a {
+  .perkido-navbar.-transparent-nav .navbar-nav > li > a {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
   }
 }
-.innova-navbar.-transparent-nav .navbar-nav > li > a:hover,
-.innova-navbar.-transparent-nav .navbar-nav > li > a:focus {
+.perkido-navbar.-transparent-nav .navbar-nav > li > a:hover,
+.perkido-navbar.-transparent-nav .navbar-nav > li > a:focus {
   color: #fff;
   background-color: transparent;
 }
-.innova-navbar.-transparent-nav .navbar-nav > .active > a,
-.innova-navbar.-transparent-nav .navbar-nav > .active > a:hover,
-.innova-navbar.-transparent-nav .navbar-nav > .active > a:focus {
+.perkido-navbar.-transparent-nav .navbar-nav > .active > a,
+.perkido-navbar.-transparent-nav .navbar-nav > .active > a:hover,
+.perkido-navbar.-transparent-nav .navbar-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
 }
-.innova-navbar.-transparent-nav .navbar-nav > .open > a,
-.innova-navbar.-transparent-nav .navbar-nav > .open > a:hover,
-.innova-navbar.-transparent-nav .navbar-nav > .open > a:focus {
+.perkido-navbar.-transparent-nav .navbar-nav > .open > a,
+.perkido-navbar.-transparent-nav .navbar-nav > .open > a:hover,
+.perkido-navbar.-transparent-nav .navbar-nav > .open > a:focus {
   border-color: transparent;
 }
-.innova-navbar.-lg {
+.perkido-navbar.-lg {
   height: 150px;
 }
-.innova-navbar .innova-navbar-nav {
+.perkido-navbar .perkido-navbar-nav {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
 }
-.innova-navbar .innova-navbar-nav > li {
+.perkido-navbar .perkido-navbar-nav > li {
   display: inline-block;
 }
-.innova-navbar .innova-navbar-nav > li > a {
+.perkido-navbar .perkido-navbar-nav > li > a {
   color: #6d878f;
   text-transform: uppercase;
   font-weight: bold;
   padding: 10px 10px;
 }
-.innova-navbar .innova-navbar-nav > li > a:hover,
-.innova-navbar .innova-navbar-nav > li > a:focus {
+.perkido-navbar .perkido-navbar-nav > li > a:hover,
+.perkido-navbar .perkido-navbar-nav > li > a:focus {
   color: #673ab7;
   background-color: transparent;
 }
-.innova-navbar .innova-navbar-nav > .active > a,
-.innova-navbar .innova-navbar-nav > .active > a:hover,
-.innova-navbar .innova-navbar-nav > .active > a:focus {
+.perkido-navbar .perkido-navbar-nav > .active > a,
+.perkido-navbar .perkido-navbar-nav > .active > a:hover,
+.perkido-navbar .perkido-navbar-nav > .active > a:focus {
   color: #673ab7;
 }
-.innova-navbar .innova-navbar-brand {
+.perkido-navbar .perkido-navbar-brand {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   display: inline-block;
   position: relative;
 }
-.innova-navbar .innova-navbar-brand img {
+.perkido-navbar .perkido-navbar-brand img {
   max-width: 160px;
   margin: 0 auto;
 }
-.innova-navbar > .container-fluid,
-.innova-navbar > .container-fluid .row,
-.innova-navbar > .container-fluid .row > div,
-.innova-navbar > .container,
-.innova-navbar > .container .row,
-.innova-navbar > .container .row > div {
+.perkido-navbar > .container-fluid,
+.perkido-navbar > .container-fluid .row,
+.perkido-navbar > .container-fluid .row > div,
+.perkido-navbar > .container,
+.perkido-navbar > .container .row,
+.perkido-navbar > .container .row > div {
   height: 100%;
 }
-.innova-navbar .btn {
+.perkido-navbar .btn {
   top: 50%;
   transform: translateY(-50%);
 }
-.innova-navbar .btn:active,
-.innova-navbar .btn.active {
+.perkido-navbar .btn:active,
+.perkido-navbar .btn.active {
   transform: translateY(-50%) scale(0.95);
 }
 .hamburger-wrapper {
@@ -3937,33 +3937,33 @@ body {
 .laptops a:hover img {
   opacity: 0.7;
 }
-.innova-docs > .container > .row {
+.perkido-docs > .container > .row {
   border-bottom: 1px solid #e6e6e6;
 }
-.innova-docs > .container > .row:last-child {
+.perkido-docs > .container > .row:last-child {
   margin-bottom: 300px;
 }
-.innova-docs > .container .container {
+.perkido-docs > .container .container {
   padding: 0;
   width: auto;
 }
-.innova-docs .innova-docs-section {
+.perkido-docs .perkido-docs-section {
   padding: 65px 0;
 }
-.innova-docs .title {
+.perkido-docs .title {
   color: #4c5e64;
   font-weight: 500;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
 }
-.innova-docs .title:before {
+.perkido-docs .title:before {
   content: '.';
   display: inline-block;
   padding-right: 6px;
   color: #9abfca;
 }
-.innova-docs .subtitle {
+.perkido-docs .subtitle {
   color: #6d878f;
   text-transform: uppercase;
   font-weight: 400;
@@ -3971,18 +3971,18 @@ body {
   margin-bottom: 30px;
   margin-top: 65px;
 }
-.innova-docs .innova-docs-buttons .btn {
+.perkido-docs .perkido-docs-buttons .btn {
   margin-right: 15px;
   width: 140px;
 }
-.innova-docs .innova-docs-buttons .btn-group {
+.perkido-docs .perkido-docs-buttons .btn-group {
   margin-right: 15px;
 }
-.innova-docs .innova-docs-buttons .btn-group > .btn {
+.perkido-docs .perkido-docs-buttons .btn-group > .btn {
   width: auto;
   margin-right: 0;
 }
-.innova-docs .button-sizes .btn {
+.perkido-docs .button-sizes .btn {
   margin-right: 15px;
   width: auto;
   position: relative;
@@ -3990,87 +3990,87 @@ body {
   display: inline-block;
   vertical-align: top;
 }
-.innova-docs .innova-docs-typography p {
+.perkido-docs .perkido-docs-typography p {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.innova-docs .innova-docs-typography p span {
+.perkido-docs .perkido-docs-typography p span {
   color: #673ab7;
 }
-.innova-docs .innova-docs-typography p:first-child {
+.perkido-docs .perkido-docs-typography p:first-child {
   margin-top: 30px;
 }
-.innova-docs .innova-docs-typography p:last-child {
+.perkido-docs .perkido-docs-typography p:last-child {
   margin-bottom: 10px;
 }
-.innova-docs .innova-docs-typography h1,
-.innova-docs .innova-docs-typography h2,
-.innova-docs .innova-docs-typography h3,
-.innova-docs .innova-docs-typography h4,
-.innova-docs .innova-docs-typography h5,
-.innova-docs .innova-docs-typography h6 {
+.perkido-docs .perkido-docs-typography h1,
+.perkido-docs .perkido-docs-typography h2,
+.perkido-docs .perkido-docs-typography h3,
+.perkido-docs .perkido-docs-typography h4,
+.perkido-docs .perkido-docs-typography h5,
+.perkido-docs .perkido-docs-typography h6 {
   margin: 20px 0;
 }
-.innova-docs .innova-docs-typography h1 {
+.perkido-docs .perkido-docs-typography h1 {
   margin-top: 56px;
 }
-.innova-docs .innova-docs-typography .extra-light {
+.perkido-docs .perkido-docs-typography .extra-light {
   font-weight: 300;
 }
-.innova-docs .innova-docs-typography .regular {
+.perkido-docs .perkido-docs-typography .regular {
   font-weight: 400;
 }
-.innova-docs .innova-docs-typography .semi-bold {
+.perkido-docs .perkido-docs-typography .semi-bold {
   font-weight: 600;
 }
-.innova-docs .innova-docs-typography .bold {
+.perkido-docs .perkido-docs-typography .bold {
   font-weight: 700;
 }
-.innova-docs .innova-docs-switches .switchery-small {
+.perkido-docs .perkido-docs-switches .switchery-small {
   width: 50px;
   margin-right: 5px;
 }
-.innova-docs .innova-docs-pagination ul.pagination {
+.perkido-docs .perkido-docs-pagination ul.pagination {
   margin-top: 0;
   margin-bottom: 0;
 }
-.innova-docs .innova-docs-pagination .pager-sizes ul.pagination {
+.perkido-docs .perkido-docs-pagination .pager-sizes ul.pagination {
   margin-bottom: 20px;
 }
-.innova-docs .innova-docs-pagination .pager {
+.perkido-docs .perkido-docs-pagination .pager {
   text-align: left;
 }
-.innova-docs .innova-docs-pagination .pager li a,
-.innova-docs .innova-docs-pagination .pager li span {
+.perkido-docs .perkido-docs-pagination .pager li a,
+.perkido-docs .perkido-docs-pagination .pager li span {
   width: 115px;
   text-align: center;
 }
-.innova-docs .innova-docs-breadcrumbs ol.breadcrumb {
+.perkido-docs .perkido-docs-breadcrumbs ol.breadcrumb {
   margin-top: 70px;
   margin-bottom: 0;
 }
-.innova-docs .innova-docs-badges a {
+.perkido-docs .perkido-docs-badges a {
   margin: 40px 0 0 0;
   display: block;
 }
-.innova-docs .innova-docs-labels .labels * {
+.perkido-docs .perkido-docs-labels .labels * {
   margin: 30px 0;
 }
-.innova-docs .innova-docs-labels .labels h3:first-child {
+.perkido-docs .perkido-docs-labels .labels h3:first-child {
   margin-top: 70px;
 }
-.innova-docs .innova-docs-labels .primary-variations,
-.innova-docs .innova-docs-labels .flat-variations {
+.perkido-docs .perkido-docs-labels .primary-variations,
+.perkido-docs .perkido-docs-labels .flat-variations {
   font-size: 20px;
 }
-.innova-docs .innova-docs-labels .primary-variations span,
-.innova-docs .innova-docs-labels .flat-variations span {
+.perkido-docs .perkido-docs-labels .primary-variations span,
+.perkido-docs .perkido-docs-labels .flat-variations span {
   margin: 0 3px 0 0;
 }
-.innova-docs .innova-docs-headers .header {
+.perkido-docs .perkido-docs-headers .header {
   margin: 30px 0;
 }
-.innova-docs .innova-docs-headers .navbar {
+.perkido-docs .perkido-docs-headers .navbar {
   margin: 0;
 }
 .sticky-wrapper {
@@ -4140,7 +4140,7 @@ button {
   padding: 26px 15px;
 }
 .navbar-brand svg,
-.innova-navbar-brand svg {
+.perkido-navbar-brand svg {
   width: 100%;
 }
 .georgia {

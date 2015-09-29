@@ -1,0 +1,482 @@
+/* ==========================================================================
+1. Headers/Navigation
+========================================================================== */
+
+// The headers are styled from top to bottom according to the docs page
+
+// 0. Global changes
+// -------------------------
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-form {
+  padding-right: 0;
+}
+
+// Smooth spacing on our buttons
+.navbar-form > button {
+  margin-left: 5px;
+}
+
+// Adjust these to your needs
+.navbar-brand {
+  max-width: 165px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -(@navbar-padding-horizontal - 10);
+    }
+  }
+}
+
+// Neat extra padding
+.navbar > .container,
+.navbar > .container-fluid {
+  // padding-left: 35px;
+  // padding-right: 35px;
+}
+
+// Fixed to top bugfixes
+.navbar-fixed-top {
+  border-top-width: 0px !important;
+  border-left-width: 0px !important;
+  border-right-width: 0px !important;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: fixed !important;
+}
+
+// 1. Primary Navbar
+// -------------------------
+
+.primary-navbar {
+	background-color: #fff;
+  border: 1px solid rgba(158, 164, 169,0.7);
+  box-shadow: 1px 2px 1px rgba(0,0,0,.05);
+  transition: all .4s ease-in-out;
+
+  .navbar-nav {
+    > li > a {
+      color: @primary-navbar-link-color;
+
+      @media (min-width: @screen-md-min) {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+      }
+
+      &:hover,
+      &:focus {
+        color: @primary-navbar-link-hover-color;
+        background-color: @primary-navbar-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @primary-navbar-link-hover-color;
+        border-bottom-color: @primary-navbar-link-hover-color;
+      }
+    }
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .glyphicon {
+    color: @primary-navbar-link-hover-color;
+  }
+
+  .navbar-toggle {
+    background-image: -moz-linear-gradient( 90deg, rgb(252,254,255) 0%, rgb(252,254,255) 3%, rgba(252,253,254,0.99) 7%, rgba(252,252,252,0.98) 20%, rgba(252,254,255,0.87843) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,254,255) 0%, rgb(252,254,255) 3%, rgba(252,253,254,0.99) 7%, rgba(252,252,252,0.98) 20%, rgba(252,254,255,0.87843) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,254,255) 0%, rgb(252,254,255) 3%, rgba(252,253,254,0.99) 7%, rgba(252,252,252,0.98) 20%, rgba(252,254,255,0.87843) 100%);
+    border: 1px solid rgba(158, 164, 169,0.7);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.05);
+
+    &:hover,
+    &:focus {
+      background-color: @primary-navbar-toggle-hover-bg;
+      background-image: none;
+    }
+    .icon-bar {
+      background-color: @primary-navbar-toggle-icon-bar-bg;
+    }
+  }
+
+  &.-transparent-nav {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .navbar-nav {
+      > li > a {
+        color: fade(#fff, 70%);
+        font-weight: 700;
+
+        @media (min-width: @screen-md-min) {
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+        }
+
+        &:hover,
+        &:focus {
+          color: #fff;
+          background-color: @primary-navbar-link-hover-bg;
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #fff;
+          border-bottom-color: #fff;
+        }
+      }
+      > .open > a {
+        &,
+        &:hover,
+        &:focus {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// 2. Secondary Navbar
+// -------------------------
+
+.secondary-navbar(@color, @background, @colored-hover) {
+  background-color: @background;
+  box-shadow: 1px 2px 1px rgba(0,0,0,.05);
+
+  .navbar-nav {
+    > li > a {
+      color: @color;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      @media (min-width: @screen-md-min) {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+      }
+
+      &:hover,
+      &:focus {
+        color: fade(@color, 60%);
+        background-color: @background;
+      }
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @color;
+        border-bottom-color: @color;
+      }
+    }
+
+    > .icon > a {
+      &:hover,
+      &:focus {
+        color: lighten(@colored-hover, 10%);
+      }
+    }
+  }
+
+  .navbar-toggle {
+    background-color: darken(@background, 15%);
+    border: 1px solid darken(@background, 20%);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.05);
+
+    &:hover,
+    &:focus {
+      background-color: darken(@background, 5%);
+      border: 1px solid darken(@background, 10%);
+    }
+
+    .icon-bar {
+      background-color: lighten(@background, 10%);
+    }
+  }
+
+  .primary-btn,
+  input {
+    border-color: transparent !important;
+  }
+
+  // Special styling for the large variant
+  &.-large {
+    padding-top: 10px;
+
+    .navbar-brand {
+      @media (max-width: @screen-md-min) {
+        float: left;
+        padding: 28px 15px;
+        font-size: 18px;
+        line-height: 20px;
+        height: 90px;
+      }
+    }
+
+    .navbar-nav:first-child {
+      > li > a {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 25px;
+        margin-left: 15px;
+        position: relative;
+        border-bottom: 0px;
+        border-top: 0px;
+
+        @media (min-width: @screen-md-min) {
+          margin-left: 35px;
+          margin-right: 35px;
+        }
+
+        @media (min-width: @screen-md-min) {
+          &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 15px;
+            background-color: lighten(@background, 15%);
+            .center-vertical;
+            right: -30px;
+          }
+        }
+      }
+
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: lighten(@colored-hover, 10%);
+        }
+      }
+
+      > li:last-child a {
+        margin-right: 15px;
+      }
+
+      > li:last-child a:after {
+        content: none;
+      }
+    }
+
+    .navbar-brand {
+      max-width: 180px;
+    }
+
+    .navbar-addon {
+      width: 100%;
+      margin-top: 15px;
+      border-top: 1px solid lighten(@background, 15%);
+      padding-top: 10px;
+
+      @media (min-width: @screen-md-min) {
+        padding-top: 0;
+      }
+
+      .icon {
+        padding-left: 15px;
+      }
+
+      > li > a {
+        text-transform: none;
+        font-weight: normal;
+        padding-left: 15px;
+        padding-right: 30px;
+        color: lighten(@background, 30%);
+
+        @media (min-width: @screen-md-min) {
+          padding-left: 0;
+        }
+
+        &:hover {
+          color: lighten(@background, 50%);
+        }
+      }
+    }
+  }
+}
+
+// Styles
+// -------------------------
+
+.secondary-navbar {
+  // Color variations
+  &.-blue {
+    .secondary-navbar(white, @perkido-blue, white);
+  }
+  &.-purple {
+    .secondary-navbar(white, @perkido-purple, white);
+  }
+  &.-red {
+    .secondary-navbar(white, @perkido-red, white);
+  }
+  &.-gray {
+    .secondary-navbar(white, darken(@perkido-gray, 7%), @perkido-purple);
+  }
+}
+
+// 3. Innova Navbar
+// ------------------------------------------
+
+.perkido-navbar {
+  // Give the perkido-navbar the same style as the primary navbar
+  .primary-navbar;
+  height: @perkido-navbar-height;
+  padding: 0 20px;
+  position: relative;
+
+  &.-lg {
+    height: @perkido-navbar-height-lg;
+  }
+
+  .perkido-navbar-nav {
+    .center-vertical;
+    position: relative;
+
+    > li {
+      display: inline-block;
+    }
+
+    > li > a {
+      color: @primary-navbar-link-color;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 10px;
+
+      &:hover,
+      &:focus {
+        color: @primary-navbar-link-hover-color;
+        background-color: @primary-navbar-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @primary-navbar-link-hover-color;
+      }
+    }
+  }
+}
+
+// Style and center the brand with the perkido-navbar
+.perkido-navbar .perkido-navbar-brand {
+  .center-both;
+  display: inline-block;
+  position: relative;
+
+  img {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
+
+// Make sure all children have a height of 100%
+// This is useful when we want to easily center elements
+.perkido-navbar > .container-fluid,
+.perkido-navbar > .container-fluid .row,
+.perkido-navbar > .container-fluid .row > div,
+.perkido-navbar > .container,
+.perkido-navbar > .container .row,
+.perkido-navbar > .container .row > div {
+  height: 100%;
+}
+
+// Center the buttons within the perkido-navbar
+.perkido-navbar .btn {
+  .center-vertical;
+
+  &:active,
+  &.active {
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+// Styling for the hamburger icon
+.hamburger-wrapper {
+  .center-vertical;
+  position: relative;
+}
+
+.hamburger-icon {
+  width:@width-line;
+  height:@height-icon;
+  position:relative;
+  display: inline-block;
+
+  .line {
+    display:block;
+    background:@color;
+    width:@width-line;
+    height:@height-line;
+    position:absolute;
+    left:0;
+    border-radius:(@height-line / 2);
+    transition: all @transition-time;
+    -webkit-transition: all @transition-time;
+    -moz-transition: all @transition-time;
+
+    &.line-1 {
+      top:0;
+    }
+
+    &.line-2 {
+      top:50%;
+    }
+
+    &.line-3 {
+      top:100%;
+    }
+  }
+
+  &:hover, &:focus {
+     .line-1 {
+        transform: translateY(@height-line / 2 * -1);
+        -webkit-transform: translateY(@height-line / 2 * -1);
+        -moz-transform: translateY(@height-line / 2 * -1);
+     }
+
+    .line-3 {
+        transform: translateY(@height-line / 2);
+        -webkit-transform: translateY(@height-line / 2);
+        -moz-transform: translateY(@height-line / 2);
+    }
+  }
+
+  &.active {
+    .line-1 {
+      transform: translateY(@translateY) translateX(@translateX) rotate(@rotation);
+      -webkit-transform: translateY(@translateY) translateX(@translateX) rotate(@rotation);
+      -moz-transform: translateY(@translateY) translateX(@translateX) rotate(@rotation);
+    }
+
+    .line-2 {
+      opacity:0;
+    }
+
+    .line-3 {
+      transform: translateY(@translateY * -1) translateX(@translateX) rotate(@rotation * -1);
+      -webkit-transform: translateY(@translateY * -1) translateX(@translateX) rotate(@rotation * -1);
+      -moz-transform: translateY(@translateY * -1) translateX(@translateX) rotate(@rotation * -1);
+    }
+  }
+}

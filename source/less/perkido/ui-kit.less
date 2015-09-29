@@ -1,0 +1,322 @@
+/* ==========================================================================
+6. UI Kit
+========================================================================== */
+
+// Reset html and body width
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// @media (min-width: 1200px) {
+//   .container {
+//     width: 1210px;
+//   }
+// }
+
+.tamashi-jumbotron {
+  background-color: @perkido-purple !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  box-shadow: inset 1px 1px 15px 5px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  max-height: 500px;
+  padding: 0;
+
+  .tamashi-branding {
+    padding: 60px 0 100px 0;
+
+    > .tamashi-logo {
+      max-width: 180px;
+    }
+
+    > .tamashi-redirect {
+      float: right;
+      padding-top: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+
+      &:hover {
+        text-decoration: none;
+        color: fade(#fff, 60%);
+      }
+    }
+  }
+
+  .title {
+    padding-bottom: 40px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    color: #fff;
+    line-height: 0.9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    .subtitle {
+      font-family: inherit;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 45%;
+      color: #fff;
+    }
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+}
+
+.laptops h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.laptops a img {
+  transition: opacity .2s ease-in-out;
+}
+
+.laptops a:hover img {
+  opacity: 0.7;
+}
+
+.perkido-docs {
+  @perkido-docs-padding: 65px;
+
+  > .container > .row {
+    border-bottom: 1px solid lighten(@gray-base, 90%);
+
+    &:last-child {
+      margin-bottom: 300px;
+    }
+  }
+
+  // Remove weird behaviour on containers within the docs
+  >.container .container {
+    padding: 0;
+    width: auto;
+  }
+
+  .perkido-docs-section {
+    padding: @perkido-docs-padding 0;
+  }
+
+  .title {
+    color: lighten(@perkido-slate-gray, 10%);
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+
+    &:before {
+      content: '.';
+      display: inline-block;
+      padding-right: 6px;
+      color: @perkido-slate-gray-light;
+    }
+  }
+
+  .subtitle {
+    color: @perkido-slate-gray-base;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: @perkido-docs-padding;
+  }
+
+  .perkido-docs-buttons {
+    .btn {
+      margin-right: 15px;
+      width: 140px;
+    }
+
+    .btn-group {
+      margin-right: 15px;
+
+      > .btn {
+        width: auto;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .button-sizes {
+    .btn {
+      margin-right: 15px;
+      width: auto;
+      position: relative;
+      top: 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .perkido-docs-typography {
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      span {
+        color: @perkido-purple;
+      }
+
+      &:first-child {
+        margin-top: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      margin: 20px 0;
+    }
+
+    h1 {
+      margin-top: 56px;
+    }
+
+    .extra-light {
+      font-weight: 300;
+    }
+
+    .regular {
+      font-weight: 400;
+    }
+
+    .semi-bold {
+      font-weight: 600;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  .perkido-docs-switches {
+    .switchery-small {
+      width: 50px;
+      margin-right: 5px;
+    }
+  }
+
+  .perkido-docs-pagination {
+    ul.pagination {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .pager-sizes {
+      ul.pagination {
+        margin-bottom: 20px;
+      }
+    }
+
+    .pager {
+      text-align: left;
+
+      li a,
+      li span {
+        width: 115px;
+        text-align: center;
+      }
+    }
+  }
+
+  .perkido-docs-breadcrumbs {
+    ol.breadcrumb {
+      margin-top: 70px;
+      margin-bottom: 0;
+    }
+  }
+
+  .perkido-docs-badges {
+    a {
+      margin: 40px 0 0 0;
+      display: block;
+    }
+  }
+
+  .perkido-docs-labels {
+    .labels * {
+      margin: 30px 0;
+    }
+
+    .labels h3:first-child {
+      margin-top: 70px;
+    }
+
+    .primary-variations,
+    .flat-variations {
+      font-size: 20px;
+    }
+
+    .primary-variations span,
+    .flat-variations span {
+      margin: 0 3px 0 0;
+    }
+  }
+
+  .perkido-docs-headers {
+    .header {
+      margin: 30px 0;
+    }
+
+    .navbar {
+      margin: 0;
+    }
+  }
+}
+
+.sticky-wrapper {
+  display: none !important;
+  float: left;
+
+  @media (min-width: 1760px) {
+    display: inline-block !important;
+  }
+}
+
+.side-menu {
+  width: 230px !important;
+  float: left;
+  display: none;
+
+  @media (min-width: 1760px) {
+    display: inline-block !important;
+  }
+
+  li:last-child {
+    .list-group-item {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
+.side-menu .list-group-item {
+  font-size: 13px;
+  outline: 0;
+  color: rgba(96, 116, 127, 0.8);
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.side-menu .list-group-item:hover {
+  color: @perkido-purple;
+  background-color: rgba(96, 116, 127, 0.04) !important;
+}
+
+.side-menu .list-group .active a {
+  color: @perkido-purple;
+  background-color: rgba(96, 116, 127, 0.04) !important;
+  outline: 0;
+}
