@@ -90,6 +90,9 @@ section .sub-heading {
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
   border-bottom: 0;
 }
+.fa.-purple {
+  color: #673ab7;
+}
 .-inverse {
   background: -webkit-linear-gradient(10deg, #456c8c 20%, #203240 95%);
   /* Chrome 10+, Saf5.1+ */

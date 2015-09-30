@@ -15,7 +15,7 @@
       outline: 0;
     }
   }
-  
+
   // Psuedo class for ripple effect
   &:before {
     position: absolute;
@@ -31,7 +31,7 @@
     transform: translateX(-50%);
     top: 0;
   }
-  
+
   // Triggers the ripple effect
   &.ripple:before {
     -webkit-animation-duration: 2000ms;
@@ -97,7 +97,7 @@
     transform: scale(0.95);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0), inset 0 0 5px rgba(0, 0, 0, 0.5);
   }
-  
+
   // Color of the ripple
   &:before {
     background-color: @background;
@@ -177,7 +177,7 @@
   &.active {
     transform: scale(0.95);
   }
-  
+
   // Color of the ripple
   &:before {
     background-color: @background;
@@ -220,6 +220,10 @@
     .flat-btn(lighten(@perkido-slate-gray, 35%), white);
     border: 1px solid lighten(@perkido-slate-gray, 35%);
   }
+  &.-transparent {
+    .flat-btn(white, rgba(255, 255, 255, 0.3));
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
 
   // Add option for round buttons
   &.-rounded {
@@ -252,7 +256,7 @@
   &.active {
     transform: scale(0.95);
   }
-  
+
   // Color of the ripple
   &:before {
     background-color: @background;

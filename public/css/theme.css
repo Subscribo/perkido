@@ -7373,6 +7373,29 @@ button.close {
   border-color: #cccccc;
   color: #e6e6e6;
 }
+.flat-btn.-transparent {
+  padding: 10px 35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.flat-btn.-transparent:hover {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+.flat-btn.-transparent:active,
+.flat-btn.-transparent.active {
+  transform: scale(0.95);
+}
+.flat-btn.-transparent:before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.flat-btn.-transparent .badge {
+  border-color: rgba(204, 204, 204, 0.3);
+  color: rgba(230, 230, 230, 0.3);
+}
 .flat-btn.-rounded {
   border-radius: 40px;
 }
