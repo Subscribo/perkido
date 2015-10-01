@@ -35,6 +35,41 @@
   }
 }
 
+.footer-features, .footer-company {
+    padding-top: 20px;
+
+    @media (min-width: @screen-md-min) {
+      padding-top: 5px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      padding-top: 0;
+    }
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    li {
+      padding-left: 0;
+      margin-bottom: 4px;
+
+      @media (min-width: @screen-xs-min) {
+        padding-left: 0px;
+      }
+    }
+
+    li a {
+      font-size: 14px;
+      color: @perkido-gray;
+
+      &:hover {
+        color: @perkido-purple;
+      }
+    }
+}
+
 // 1. Footer 1
 // -------------------------
 
@@ -125,7 +160,7 @@
 
   .footer-social {
     padding-top: 20px;
-  
+
     @media (min-width: @screen-md-min) {
       padding-top: 5px;
     }
