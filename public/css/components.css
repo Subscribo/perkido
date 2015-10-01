@@ -2921,9 +2921,8 @@ section .sub-heading {
   opacity: 0;
 }
 .portfolio .portfolio-item .overlay-inset .portfolio-description .portfolio-title {
-  color: #fff;
   margin: 0;
-  font-size: 22px;
+  font-size: 15px;
 }
 .portfolio .portfolio-item .overlay-inset .portfolio-description .portfolio-title small {
   color: rgba(255, 255, 255, 0.8);

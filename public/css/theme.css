@@ -7373,7 +7373,7 @@ button.close {
   border-color: #cccccc;
   color: #e6e6e6;
 }
-.flat-btn.-transparent {
+.flat-btn.-transparent-white {
   padding: 10px 35px;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
@@ -7382,19 +7382,65 @@ button.close {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-.flat-btn.-transparent:hover {
+.flat-btn.-transparent-white:hover {
   background-color: rgba(217, 217, 217, 0.6);
 }
-.flat-btn.-transparent:active,
-.flat-btn.-transparent.active {
+.flat-btn.-transparent-white:active,
+.flat-btn.-transparent-white.active {
   transform: scale(0.95);
 }
-.flat-btn.-transparent:before {
+.flat-btn.-transparent-white:before {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.flat-btn.-transparent .badge {
+.flat-btn.-transparent-white .badge {
   border-color: rgba(204, 204, 204, 0.6);
   color: rgba(230, 230, 230, 0.6);
+}
+.flat-btn.-transparent-purple {
+  padding: 10px 35px;
+  background-color: rgba(103, 58, 183, 0.8);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(103, 58, 183, 0.95);
+}
+.flat-btn.-transparent-purple:hover {
+  background-color: rgba(70, 40, 125, 0.8);
+}
+.flat-btn.-transparent-purple:active,
+.flat-btn.-transparent-purple.active {
+  transform: scale(0.95);
+}
+.flat-btn.-transparent-purple:before {
+  background-color: rgba(103, 58, 183, 0.8);
+}
+.flat-btn.-transparent-purple .badge {
+  border-color: rgba(59, 33, 106, 0.8);
+  color: rgba(81, 46, 144, 0.8);
+}
+.flat-btn.-transparent-warning {
+  padding: 10px 35px;
+  background-color: rgba(211, 185, 71, 0.8);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(211, 185, 71, 0.7);
+}
+.flat-btn.-transparent-warning:hover {
+  background-color: rgba(166, 142, 40, 0.8);
+}
+.flat-btn.-transparent-warning:active,
+.flat-btn.-transparent-warning.active {
+  transform: scale(0.95);
+}
+.flat-btn.-transparent-warning:before {
+  background-color: rgba(211, 185, 71, 0.8);
+}
+.flat-btn.-transparent-warning .badge {
+  border-color: rgba(145, 125, 35, 0.8);
+  color: rgba(186, 160, 45, 0.8);
 }
 .flat-btn.-rounded {
   border-radius: 40px;
