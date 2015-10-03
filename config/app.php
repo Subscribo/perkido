@@ -148,8 +148,8 @@ return [
         /*
          * Third Party Service Providers
          */
-        'trupedia\LaravelBladeHaml\LaravelBladeHamlServiceProvider',
         Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
+        'TwigBridge\ServiceProvider',
 
     ],
 
@@ -203,8 +203,8 @@ return [
         /*
          * Third Party aliases
          */
-
         'GAMP'  => Irazasyed\LaravelGAMP\Facades\GAMP::class,
+        'Twig' => 'TwigBridge\Facade\Twig',
 
     ],
 
