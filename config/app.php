@@ -149,6 +149,7 @@ return [
          * Third Party Service Providers
          */
         'trupedia\LaravelBladeHaml\LaravelBladeHamlServiceProvider',
+        Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
 
     ],
 
@@ -198,6 +199,12 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Third Party aliases
+         */
+
+        'GAMP'  => Irazasyed\LaravelGAMP\Facades\GAMP::class,
 
     ],
 
