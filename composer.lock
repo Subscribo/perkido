@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8dcd1dc0662b96407ecc336056d4f86f",
-    "content-hash": "a969a10aa50cbbf127e65913ebc18048",
+    "hash": "19162c1db417ff719f6ca4d5d32d7c9c",
+    "content-hash": "7c3c285a85ce4d9328ab32c8990d9e00",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -870,6 +870,68 @@
                 "psr-3"
             ],
             "time": "2015-08-31 09:17:37"
+        },
+        {
+            "name": "mstroeck/laravel-twigbridge-haml",
+            "version": "0.8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mstroeck/laravel-twigbridge-haml.git",
+                "reference": "fcd31c7609c55139d752f2a8308ae2744f0c5cee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mstroeck/laravel-twigbridge-haml/zipball/fcd31c7609c55139d752f2a8308ae2744f0c5cee",
+                "reference": "fcd31c7609c55139d752f2a8308ae2744f0c5cee",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.0.*|5.1.*",
+                "illuminate/view": "5.0.*|5.1.*",
+                "mthaml/mthaml": "~1.3",
+                "php": ">=5.4.0",
+                "twig/twig": "~1.15|~2.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.0.*",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "laravelcollective/html": "For bringing back html/form in Laravel 5.x",
+                "twig/extensions": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TwigBridge\\": "src",
+                    "TwigBridge\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael G. Ströck",
+                    "email": "michael@stroeck.com"
+                }
+            ],
+            "description": "Adds the power of Twig and Haml to Laravel. Almost entirely based on work by Rob Crowe.",
+            "keywords": [
+                "HAML",
+                "laravel",
+                "twig"
+            ],
+            "time": "2015-10-03 20:52:47"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2031,52 +2093,65 @@
             "time": "2015-07-18 14:47:13"
         },
         {
-            "name": "trupedia/laravel-blade-haml",
-            "version": "1.0.0",
+            "name": "twig/twig",
+            "version": "v1.22.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/trupedia/laravel-blade-haml.git",
-                "reference": "1af76f9464df2a5b3508b977fdc1c63a7c51a2e6"
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "79249fc8c9ff62e41e217e0c630e2e00bcadda6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trupedia/laravel-blade-haml/zipball/1af76f9464df2a5b3508b977fdc1c63a7c51a2e6",
-                "reference": "1af76f9464df2a5b3508b977fdc1c63a7c51a2e6",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/79249fc8c9ff62e41e217e0c630e2e00bcadda6a",
+                "reference": "79249fc8c9ff62e41e217e0c630e2e00bcadda6a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": ">=5.0",
-                "illuminate/view": ">=5.0",
-                "mthaml/mthaml": "~1.3",
-                "php": ">=5.3.0"
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.22-dev"
+                }
+            },
             "autoload": {
-                "psr-4": {
-                    "trupedia\\LaravelBladeHaml\\": "src/"
+                "psr-0": {
+                    "Twig_": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Robert Reinhard",
-                    "email": "info@bkwld.com"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
-                    "name": "Julian Karhoff",
-                    "email": "j.karhoff@trupedia.de"
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
                 }
             ],
-            "description": "Wraps MtHaml for ease use in Laravel 5 with Blade syntax style",
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
             "keywords": [
-                "HAML",
-                "blade",
-                "laravel"
+                "templating"
             ],
-            "time": "2015-03-30 17:23:23"
+            "time": "2015-09-22 13:59:32"
         },
         {
             "name": "vlucas/phpdotenv",

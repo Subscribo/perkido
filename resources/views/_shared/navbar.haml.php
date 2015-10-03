@@ -1,5 +1,71 @@
-@extends('_layouts.master')
-
-@section('navbar')
-navbar
-@endsection
+-# Pre-load logo
+%img.hidden{:src => "#{asset('assets/images/perkido-logo-purple.png')}"}/
+%nav.navbar.navbar-fixed-top.navbar-fixed-top-transparent.primary-navbar.-transparent-nav
+  .container
+    -# Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"}
+        %img#logo.img-responsive{:src => "#{asset('assets/images/perkido-logo-purple.png')}"}/
+    -# Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Features
+            %span.caret </  span>
+          %ul.dropdown-menu.dropdown-flat.-purple{:role => "menu"}
+            %li
+              %a{:href => "#"} Mobile App
+            %li
+              %a{:href => "#"} Für Mitarbeiter
+            %li
+              %a{:href => "#"} Für Geschäftsleitung & HR
+            %li.active
+              %a{:href => "#"} Für die IT-Abteilung
+        %li
+          %a{:href => "#"} Die Perks
+        %li
+          %a{:href => "#"} Erfolgsgeschichten
+        %li
+          %a{:href => "#"} Happiness Handbook
+      %ul.hidden-xs.hidden-sm.nav.navbar-nav.navbar-right{:role => "search"}
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Wien
+            %span.caret </  span>
+          %ul.dropdown-menu.dropdown-flat.-purple{:role => "menu"}
+            %li.active
+              %a{:href => "#"} Wien
+            %li
+              %a{:href => "coming-soon.html?city=Berlin"} Berlin
+            %li
+              %a{:href => "coming-soon.html?city=Zürich"} Zürich
+            %li
+              %a{:href => "coming-soon.html?city=Hamburg"} Hamburg
+            %li
+              %a{:href => "coming-soon.html?city=Köln"} Köln
+            %li
+              %a{:href => "coming-soon.html?city=Frankfurt"} Frankfurt
+            %li
+              %a{:href => "coming-soon.html?city=Stuttgart"} Stuttgart
+            %li
+              %a{:href => "coming-soon.html?city=Düsseldorf"} Düsseldorf
+            %li
+              %a{:href => "coming-soon.html?city=Dortmund"} Dortmund
+            %li
+              %a{:href => "coming-soon.html?city=Essen"} Essen
+            %li
+              %a{:href => "coming-soon.html?city=Bremen"} Bremen
+            %li
+              %a{:href => "coming-soon.html?city=Leipzig"} Leipzig
+            %li
+              %a{:href => "coming-soon.html?city=Dresden"} Dresden
+            %li
+              %a{:href => "coming-soon.html?city=Hannover"} Hannover
+        .hidden-xs.hidden-sm.navbar-form.navbar-right{:role => "search"}
+          %button.btn.primary-btn.-rounded.-purple.-sm.mt-3 Anmelden
