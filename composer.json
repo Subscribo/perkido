@@ -7,7 +7,8 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "trupedia/laravel-blade-haml": "~1.0"
+        "trupedia/laravel-blade-haml": "~1.0",
+        "irazasyed/laravel-gamp": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
