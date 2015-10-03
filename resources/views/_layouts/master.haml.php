@@ -8,8 +8,7 @@
     %title @yield('title', 'Perkido')
 
     -# Import Theme & Components
-    %link{:href => "css/theme.css", :rel => "stylesheet"}
-    %link{:href => "css/components.css", :rel => "stylesheet"}
+    %link{:href => "#{elixir('assets/css/perkido.css')}", :rel => "stylesheet"}
 
     -# Load the fonts
     %link{:href => "fonts/outlined-icon-set/outlined.css", :rel => "stylesheet"}

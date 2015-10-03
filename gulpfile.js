@@ -1,6 +1,7 @@
 process.env.DISABLE_NOTIFIER = true;
 
 var elixir = require('laravel-elixir');
+var imagemin = require('laravel-elixir-imagemin');
 
 /*
  |--------------------------------------------------------------------------
@@ -28,3 +29,8 @@ elixir(function(mix) {
 elixir(function(mix) {
     mix.version(['public/assets/js/perkido.js', 'public/assets/js/vendor.js', 'public/assets/css/perkido.css']);
 });
+
+elixir(function(mix) {
+    mix.imagemin('public/assets/img');
+});
+
