@@ -71,16 +71,11 @@
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"}
 
     -# Load main js
-    %script{:src => "js/main.min.js"}
-
-    -# Load custom shuffle for Perks filter
-    %script{:src => "js/portfolio-shuffle.min.js"}
+    %script{:src => "#{elixir('assets/js/perkido.js')}"}
+    %script{:src => "#{elixir('assets/js/vendor.js')}"}
 
     -# Flickity
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"}
-
-    -# Load custom Flickity
-    %script{:src => "js/flickity-settings.min.js"}
 
     -# Change transparent header on scroll
     :javascript
