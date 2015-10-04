@@ -2278,10 +2278,10 @@ section .sub-heading {
   background-size: cover;
 }
 .masthead-11 .gallery-cell:first-child {
-  background-image: url(../img/portfolio-items/bg-3.jpg);
+  background-image: url(../images/portfolio-items/bg-3.jpg);
 }
 .masthead-11 .gallery-cell:nth-child(2) {
-  background-image: url(../img/portfolio-items/bg-4.jpg);
+  background-image: url(../images/portfolio-items/bg-4.jpg);
 }
 .masthead-11 .masthead-body {
   display: table-cell;
@@ -2756,7 +2756,7 @@ section .sub-heading {
 }
 .content-7 {
   padding: 0;
-  background-image: url(../img/portfolio-items/bg-5.jpg);
+  background-image: url(../images/portfolio-items/bg-5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
@@ -4263,7 +4263,7 @@ button {
   height: 72%;
   z-index: 1;
   background-color: #673ab7;
-  background-image: url(../img/geometry2.jpg);
+  background-image: url(../images/geometry2.jpg);
   border-bottom: 1px solid #fff;
 }
 .homepage-default .masthead-9 .device {
@@ -4337,7 +4337,7 @@ button {
   fill: #ceb132;
 }
 .homepage-app .-inverse {
-  background-image: url(../img/stardust.png);
+  background-image: url(../images/stardust.png);
   background-color: #2b383e;
 }
 .homepage-app .masthead-8 {
@@ -4420,7 +4420,7 @@ button {
   font-size: 70%;
 }
 .homepage-onepage .masthead-11 .gallery-cell:first-child {
-  background-image: url(../img/portfolio-items/bg-6.jpg);
+  background-image: url(../images/portfolio-items/bg-6.jpg);
 }
 .portfolio-content {
   background-color: transparent !important;
