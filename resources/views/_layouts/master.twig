@@ -6,6 +6,27 @@
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
 
+    %meta{ name: "description", content: "Perkido ist eine Plattform die Unternehmen dabei unterstützt, eine Kultur der Wertschätzung und Anerkennung zu leben." }
+    %meta{ name: "keywords", content: "Perkido, Human Resources, HR, eNPS, Mitarbeiterbindung, Corporate Benefits, Gutscheine, Lohnverrechnung, Personalverrechnung" }
+    %meta{ name: "author", content: "Michael G. Ströck" }
+
+    -# Open Graph
+    %meta{ property: "og:title", content: "Perkido - Employee Happiness" }
+    %meta{ property: "og:type", content: "website" }
+    %meta{ property: "og:url", content: "ROOT_URL" }
+    %meta{ property: "og:image", content: "" }
+    %meta{ property: "og:description", content: "" }
+    %meta{ property: "fb:admins", content: "712740432" }
+
+    -# Twitter Cards
+    %meta{ name: "twitter:card", content: "summary" }
+    %meta{ name: "twitter:site", content: "@PerkidoHQ" }
+    %meta{ name: "twitter:creator", content: "@PerkidoHQ" }
+    %meta{ name: "twitter:url", content: "ROOT_URL" }
+    %meta{ name: "twitter:title", content: "Perkido - Employee Happiness" }
+    %meta{ name: "twitter:description", content: "Perkido ist eine Plattform die Unternehmen dabei unterstützt, eine Kultur der Wertschätzung und Anerkennung zu leben." }
+    %meta{ name: "twitter:image", content: "" }
+
     %title @yield('title', 'Perkido')
 
     -# Import Theme & Components
@@ -33,7 +54,11 @@
 
   %body{ class: "fasdfasdf" }
 
+    -# Placeholder element for Facebook JS
     #fb-root
+
+    -include "_shared/navbar"
+    -include "_shared/footer"
 
     -# jQuery (necessary for Bootstrap's JavaScript plugins)
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
