@@ -1,5 +1,6 @@
 {% haml %}
 -# Pre-load logo
+%img.hidden{:src => "#{asset('assets/images/perkido-logo-white.png')}"}/
 %img.hidden{:src => "#{asset('assets/images/perkido-logo-purple.png')}"}/
 
 %nav.navbar.navbar-fixed-top.navbar-fixed-top-transparent.primary-navbar.-transparent-nav
@@ -13,7 +14,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{:href => "#"}
-        %img#logo.img-responsive{:src => "#{asset('assets/images/perkido-logo-purple.png')}"}/
+        %img#logo.img-responsive{:src => "#{asset('assets/images/perkido-logo-white.png')}"}/
 
     -# Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse

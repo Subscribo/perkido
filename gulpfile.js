@@ -29,8 +29,3 @@ elixir(function(mix) {
 elixir(function(mix) {
     mix.version(['public/assets/js/perkido.js', 'public/assets/js/vendor.js', 'public/assets/css/perkido.css']);
 });
-
-elixir(function(mix) {
-    mix.imagemin('public/assets/img');
-});
-
